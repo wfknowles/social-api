@@ -2,8 +2,8 @@
 
 POA:
 * setup server and install dependencies
-- format timestamp correctly
-- create user model, routes, and controllers
+* format timestamp correctly
+* create user model, routes, and controllers
 - create thought model, routes, and controllers
 - create reaction schema
 
