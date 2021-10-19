@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const dateFormat = require('../utils/dateFormat');
+const {dateFormat} = require('../utils/dateFormat');
 
 /* 
 User
@@ -55,4 +55,4 @@ UserSchema.virtual('friendCount').get(function() {
 
 const User = model('User', UserSchema);
 
-module.exports = Pizza;
+module.exports = User;

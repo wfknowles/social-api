@@ -16,7 +16,7 @@ const db = mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/soci
 mongoose.set('debug', true);
 
 // App Routing
-// app.use(require('./routes'));
+app.use(require('./routes'));
 
 const appServer = app.listen(PORT, () => console.log(`🌍 Connected on localhost:${PORT}`));
 

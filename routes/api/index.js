@@ -3,5 +3,8 @@ const userRoutes = require('./user-routes');
 
 router.use('/users', userRoutes);
 
+router.use((req, res) => {
+    res.status(404).send();
+});
 
 module.exports = router;

@@ -1,5 +1,5 @@
 // convert month integer into formatted month string
-const monthFormat = (month, abbeviate = false) => {
+const monthFormat = (month, abbreviate = false) => {
     const months = [
         'January', 
         'February', 
@@ -42,8 +42,8 @@ const dayFormat = (date) => {
 // convert hour to 12-hr clock
 const hourFormat = (hour) => {
     let formattedHour = hour > 12
-    ? Math.floor(dateObj.getHours() - 12)
-    : dateObj.getHours();
+    ? hour - 12
+    : hour;
 
     // convert 0 to midnight (12)
     if (formattedHour === 0) {
@@ -69,6 +69,11 @@ const dateFormat = (timestamp) => {
     return formattedDate;
 }
 
-module.exports = dateFormat;
+module.exports = {
+    monthFormat,
+    dayFormat,
+    hourFormat,
+    dateFormat
+};
 
   
