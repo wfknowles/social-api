@@ -25,8 +25,4 @@ router.route('/:userId/friends/:friendId')
     .post(addFriend)
     .delete(removeFriend);
 
-// router.route('*', (req, res) => {
-//     res.status(404).send();
-// });
-
 module.exports = router;
