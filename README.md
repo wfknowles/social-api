@@ -3,7 +3,7 @@
 Walkthrough Video: https://watch.screencastify.com/v/zbmR2A7tVsDkFzuN8zX1
 
 ## Description
-A progressive web application for tracking expenses.
+A social api that supports CRUD actions for Users, Thoughts, Reactions, and Friends.
 
 ## Questions
 Github: https://github.com/wfknowles/
